@@ -1,3 +1,5 @@
+// test
+
 window.addEventListener("resize", resizeFunction);
 var mq = window.matchMedia("(max-width:1200px)");
 landtext = document.getElementsByClassName("landing-title");
