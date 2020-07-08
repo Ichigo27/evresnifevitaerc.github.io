@@ -167,6 +167,7 @@
         id="carouselExampleIndicators"
         class="carousel slide"
         data-ride="carousel"
+        data-interval="10000"
       >
         <ol class="carousel-indicators">
           <li
@@ -195,37 +196,45 @@
                       <div class="col-md-4 mb-2">
                         <select
                           class="custom-select"
-                          id="inputGroupSelect04"
+                          name="firstselect"
+                          id="firstselect"
                           aria-label="Example select with button addon"
                           style="
                             border-top-right-radius: 0;
                             border-bottom-right-radius: 0;
                           "
                         >
-                          <option selected>Choose...</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                          <option value="base" selected disabled
+                            >Choose...</option
+                          >
+                          <option value="Eligibility"
+                            >Check My Loan Eligibility</option
+                          >
+                          <option value="Debt">Are you in Debt?</option>
+                          <option value="Insurance">Get Insurance</option>
+                          <option value="Property">Book a Property</option>
                         </select>
                       </div>
                       <div class="col-md-4 mb-2">
                         <select
                           class="custom-select"
-                          id="inputGroupSelect04"
+                          name="secondselect"
+                          id="secondselect"
                           aria-label="Example select with button addon"
                           style="
                             border-top-left-radius: 0;
                             border-bottom-left-radius: 0;
                           "
                         >
-                          <option selected>Choose...</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                          <option value="" selected disabled>Choose...</option>
                         </select>
                       </div>
                       <div class="col-md-3 mb-2 ml-md-2">
-                        <button class="btn btn-info btn-block" type="button">
+                        <button
+                          class="btn btn-info btn-block"
+                          type="button"
+                          id="btnSubmit"
+                        >
                           Confirm
                         </button>
                       </div>
@@ -344,10 +353,9 @@
           <div
             class="section-title col-lg-10 ml-auto mr-auto text-center text-anime-landing"
           >
-            <h1 class="mb-4">Our Services</h1>
+            <h1 class="mb-4">Contact Us For Financial Aid</h1>
             <p>
-              Our Services change this Connect with Us for Financial Advice We
-              offer the full spectrum of Financial Services to help everyone
+              We offer the full spectrum of Financial Services to help everyone
               from all sphere of life. At Creative Finserve, we’re dedicated in
               helping to solve their toughest challenges and providing a one
               stop financial Solutions with expert advice from Loans, Insurance
@@ -499,7 +507,7 @@
             organizations etc. Take a look at all types of loans :
           </p>
         </div>
-        <div class="row row-cols-1 row-cols-md-2">
+        <div class="row row-cols-1 row-cols-md-2 justify-content-center">
           <div class="col mb-4">
             <div class="h-100 card loans-anime" style="max-width: 540px;">
               <div class="row no-gutters align-items-center">
@@ -847,7 +855,7 @@
             <div class="card faq-anime">
               <div class="card-body">
                 <div class="row justify-content-center">
-                  <div class="col-sm-6 mb-4">
+                  <div class="col-sm-6 mb-4 mb-sm-0">
                     <h4 class="card-title text-center mb-4">
                       Frequently Asked Questions
                     </h4>
@@ -895,61 +903,292 @@
                   </div>
                   <div class="col-sm-6">
                     <h4 class="card-title text-center mb-4">
-                      Ask your Questions
+                      Ask Your Questions
                     </h4>
                     <div class="contactFormContainer container">
-                      <form>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="firstName">First Name</label>
-                            <input
-                              type="text is-valid"
-                              class="form-control is-valid"
-                              id="firstName"
-                              placeholder="First Name"
-                              required
-                            />
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label for="lastName">Last Name</label>
+                      <form class="needs-validation mb-4" novalidate action="">
+                        <div class="form-group row no-gutters">
+                          <label
+                            for="validationCustom01"
+                            class="col-sm-3 col-form-label control-label"
+                            >Name</label
+                          >
+                          <div class="col-sm-9">
                             <input
                               type="text"
-                              class="form-control is-valid"
-                              id="lastName"
-                              placeholder="Last Name"
+                              class="form-control"
+                              id="validationCustom01"
+                              placeholder=" Name"
                               required
                             />
+                            <div class="invalid-feedback">
+                              Please Fill out This Field
+                            </div>
                           </div>
                         </div>
-                        <div class="form-group">
-                          <label for="inputEmail">Email Address</label>
-                          <input
-                            type="email"
-                            class="form-control is-valid"
-                            id="inputEmail"
-                            placeholder="Email"
-                            required
-                          />
+
+                        <div class="form-group row no-gutters">
+                          <label
+                            for="validationCustom03"
+                            class="col-sm-3 col-form-label contol-label"
+                            >Email</label
+                          >
+                          <div class="col-sm-9">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationCustom03"
+                              placeholder="Email-address"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Please Fill out This Field
+                            </div>
+                          </div>
                         </div>
-                        <div class="form-group">
-                          <label for="phoneNumber">Phone Number</label>
-                          <input
-                            type="text"
-                            class="form-control is-invalid"
-                            id="phoneNumber"
-                            placeholder="Phone Number"
-                            required
-                          />
+                        <div class="form-group row no-gutters">
+                          <label
+                            for="validationCustom04"
+                            class="col-sm-3 col-form-label control-label"
+                            >Phone Number</label
+                          >
+                          <div class="col-sm-9">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationCustom04"
+                              placeholder="Phone Number"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Please Fill out This Field
+                            </div>
+                          </div>
                         </div>
-                        <div class="form-group">
-                          <label for="question">Your Question</label>
-                          <textarea class="form-control is-valid"></textarea>
+                        <div class="form-group row no-gutters">
+                          <legend class="col-sm-3 col-form-label control-label">
+                            Select From
+                          </legend>
+                          <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input radio-inline"
+                                type="radio"
+                                name="inlineRadioOptions"
+                                id="inlineRadio1"
+                                value="option1"
+                                onclick="display()"
+                                required
+                              />
+                              <label
+                                class="form-check-label contol-label"
+                                for="inlineRadio1"
+                                >Loans</label
+                              >
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input radio-inline"
+                                type="radio"
+                                name="inlineRadioOptions"
+                                id="inlineRadio2"
+                                value="option2"
+                                onclick="display()"
+                                required
+                              />
+                              <label
+                                class="form-check-label control-label"
+                                for="inlineRadio2"
+                                >Insurance</label
+                              >
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input radio-inline"
+                                type="radio"
+                                name="inlineRadioOptions"
+                                id="inlineRadio3"
+                                value="option3"
+                                onclick="display()"
+                                required
+                              />
+                              <label
+                                class="form-check-label control-label"
+                                for="inlineRadio3"
+                                >Real Estate</label
+                              >
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input radio-inline"
+                                type="radio"
+                                name="inlineRadioOptions"
+                                id="inlineRadio4"
+                                value="option4"
+                                onclick="display()"
+                                required
+                              />
+                              <label
+                                class="form-check-label control-label"
+                                for="inlineRadio4"
+                                >Debt Consolidation</label
+                              >
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input radio-inline"
+                                type="radio"
+                                name="inlineRadioOptions"
+                                id="inlineRadio5"
+                                value="option5"
+                                onclick="display()"
+                                required
+                              />
+                              <label
+                                class="form-check-label control-label"
+                                for="inlineRadio5"
+                                >Join as a Partner</label
+                              >
+                            </div>
+                          </div>
                         </div>
-                        <div class="form-group">
-                          <button type="submit" class="btn btn-info">
-                            Submit
-                          </button>
+                        <div class="option1 d-none" id="o1">
+                          <div class="form-group row no-gutters">
+                            <label class="col-sm-3"></label>
+                            <div class="col-sm-9">
+                              <select class="form-control" required>
+                                <option value="" disabled
+                                  >Choose your Option</option
+                                >
+                                <option value="pl">PL</option>
+                                <option value="bl">BL</option>
+                                <option value="hl">HL</option>
+                                <option value="lap">LAP</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
+                        <div class="option2 d-none" id="o2">
+                          <div class="form-group row no-gutters">
+                            <label class="col-sm-3"></label>
+                            <div class="col-sm-9">
+                              <select class="form-control" required>
+                                <option value="" disabled
+                                  >Choose your Option</option
+                                >
+                                <option value="gi">General Insurance</option>
+                                <option value="li">Life Insurance</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="option3 d-none" id="o3">
+                          <div class="form-group row no-gutters">
+                            <label class="col-sm-3"></label>
+                            <div class="col-sm-9">
+                              <select class="form-control" required>
+                                <option value="" disabled
+                                  >Choose your Option</option
+                                >
+                                <option value="l">Location</option>
+                                <option valu="a1">area 1</option>
+                                <option value="a2">area 2</option>
+                                <option value="a3">area 3</option>
+                                <option value="a4">area 4</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="option4 d-none" id="o4">
+                          <div class="form-group row no-gutters">
+                            <label class="col-sm-3"></label>
+                            <div class="col-sm-9">
+                              <div class="custom-file">
+                                <input
+                                  type="file"
+                                  class="custom-file-input"
+                                  id="customFile"
+                                />
+                                <label
+                                  class="custom-file-label control-label"
+                                  for="customFile"
+                                  >Choose file</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="option5 d-none" id="o5">
+                          <div class="form-group row no-gutters">
+                            <label class="col-sm-3"></label>
+                            <div class="col-sm-9">
+                              <button type="button" class="btn btn-info">
+                                Join as a Partner
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-group row no-gutters">
+                          <label
+                            for="validationCustom06"
+                            class="col-sm-3 col-form-label control-label"
+                            >Location</label
+                          >
+                          <div class="col-sm-9">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationCustom06"
+                              placeholder="Location"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Please Fill out This Field
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group row no-gutters">
+                          <label
+                            for="validationCustom07"
+                            class="col-sm-3 col-form-label control-label"
+                            >Pin Code</label
+                          >
+                          <div class="col-sm-9">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="validationCustom07"
+                              placeholder="Pin Code"
+                              required
+                            />
+                            <div class="invalid-feedback">
+                              Please Fill out This Field
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group row no-gutters">
+                          <label
+                            for="formq"
+                            class="col-sm-3 col-form-label control-label"
+                            >Remark</label
+                          >
+                          <div class="col-sm-9">
+                            <textarea
+                              class="form-control"
+                              placeholder=""
+                              row="6"
+                              required
+                            ></textarea>
+                            <div class="invalid-feedback">
+                              Please Fill out This Field
+                            </div>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-info float-right">
+                          Submit
+                        </button>
                       </form>
                     </div>
                   </div>
@@ -1150,6 +1389,116 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/home.js"></script>
     <script src="assets/js/animation.js"></script>
+    <script>
+      // Disable form submissions if there are invalid fields
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (
+              form
+            ) {
+              form.addEventListener(
+                "submit",
+                function (event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            });
+          },
+          false
+        );
+      })();
+    </script>
+    <script>
+      function display() {
+        if (document.getElementById("inlineRadio1").checked) {
+          if (document.body.contains(document.getElementById("o1"))) {
+            document.getElementById("o1").classList.remove("d-none");
+            document.getElementById("o2").classList.add("d-none");
+            document.getElementById("o3").classList.add("d-none");
+            document.getElementById("o4").classList.add("d-none");
+            document.getElementById("o5").classList.add("d-none");
+          }
+        } else if (document.getElementById("inlineRadio2").checked) {
+          if (document.body.contains(document.getElementById("o2"))) {
+            document.getElementById("o2").classList.remove("d-none");
+            document.getElementById("o1").classList.add("d-none");
+            document.getElementById("o3").classList.add("d-none");
+            document.getElementById("o4").classList.add("d-none");
+            document.getElementById("o5").classList.add("d-none");
+          }
+        } else if (document.getElementById("inlineRadio3").checked) {
+          if (document.body.contains(document.getElementById("o3"))) {
+            document.getElementById("o3").classList.remove("d-none");
+            document.getElementById("o1").classList.add("d-none");
+            document.getElementById("o2").classList.add("d-none");
+            document.getElementById("o4").classList.add("d-none");
+            document.getElementById("o5").classList.add("d-none");
+          }
+        } else if (document.getElementById("inlineRadio4").checked) {
+          if (document.body.contains(document.getElementById("o4"))) {
+            document.getElementById("o4").classList.remove("d-none");
+            document.getElementById("o2").classList.add("d-none");
+            document.getElementById("o3").classList.add("d-none");
+            document.getElementById("o1").classList.add("d-none");
+            document.getElementById("o5").classList.add("d-none");
+          }
+        } else if (document.getElementById("inlineRadio5").checked) {
+          if (document.body.contains(document.getElementById("o4"))) {
+            document.getElementById("o5").classList.remove("d-none");
+            document.getElementById("o2").classList.add("d-none");
+            document.getElementById("o3").classList.add("d-none");
+            document.getElementById("o4").classList.add("d-none");
+            document.getElementById("o1").classList.add("d-none");
+          }
+        } else {
+          alert("please select any option!");
+        }
+      }
+    </script>
+    <script>
+      $("#firstselect").change(function () {
+        var $dropdown = $(this);
+
+        $.getJSON("data.json", function (data) {
+          var key = $dropdown.val();
+          var vals = [];
+
+          switch (key) {
+            case "Eligibility":
+              vals = data.Eligibility.split(",");
+              break;
+            case "Debt":
+              vals = data.Debt.split(",");
+              break;
+            case "Insurance":
+              vals = data.Insurance.split(",");
+              break;
+            case "Property":
+              vals = data.Property.split(",");
+              break;
+            case "base":
+              vals = ["Choose..."];
+          }
+
+          var $secondChoice = $("#secondselect");
+          $secondChoice.empty();
+          $.each(vals, function (index, value) {
+            $secondChoice.append("<option>" + value + "</option>");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
 <!-- src="assets/images/avatar-1.jpeg"
