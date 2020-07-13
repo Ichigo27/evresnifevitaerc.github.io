@@ -1,0 +1,344 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/home.css" />
+
+    <!--Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img
+            height="30"
+            src="assets/images/cf-logo - Copy.png"
+            class="align-center img-responsive brand-logo1"
+            alt=""
+          />
+          <img
+            height="30"
+            src="assets/images/cf-logo.png"
+            class="align-center img-responsive brand-logo2"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link ml-2" href="#"><strong>Home</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2" href="#"><strong>About Us</strong></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle ml-2"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><strong>Services</strong>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Know your Eligibility</a>
+                <a class="dropdown-item" href="#">Free Consultation</a>
+                <a class="dropdown-item" href="#">Join as a Partner</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2" href="#"><strong>Contact Us</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-2" href="#"><strong>Blog</strong></a>
+            </li>
+            <li class="nav-item ml-2">
+              <a href="">
+                <button class="btn btn-info" type="button">
+                  Join As a Partner
+                </button>
+              </a>
+            </li>
+            <li class="nav-item dropdown d-block d-lg-none">
+              <a
+                class="nav-link dropdown-toggle ml-2"
+                href="#"
+                id="moreDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <strong>More</strong>
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="moreDropdown"
+                style="height: 200px; overflow-y: scroll;"
+              >
+                <a class="dropdown-item" href="#">HOME</a>
+                <a class="dropdown-item" href="#">ABOUT US</a>
+                <a class="dropdown-item" href="#">BLOG</a>
+                <a class="dropdown-item" href="#">JOIN AS A PARTNER</a>
+                <a class="dropdown-item" href="#">SERVICES</a>
+                <a class="dropdown-item" href="#">APPLY FOR A LOAN</a>
+                <a class="dropdown-item" href="#">GET INSURANCE</a>
+                <a class="dropdown-item" href="#">BOOK A PROPERTY</a>
+                <a class="dropdown-item" href="#">CALCULATORS</a>
+                <a class="dropdown-item" href="#">DOWNLOAD CHECKLIST</a>
+                <a class="dropdown-item" href="#">CONTACT US</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="tel:8828824242">
+                <i
+                  class="fa fa-phone mr-2 row align-self-center"
+                  aria-hidden="true"
+                ></i>
+                <strong>8828824142</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="container-icon d-none d-lg-block">
+          <span class="menu-icon" id="menu-icon" onclick="openMenu()">
+            <i class="fa fa-align-justify fa-2x"></i>
+          </span>
+        </div>
+        <div class="menu-container" id="navbar">
+          <span class="close-menu" id="close-icon" onclick="closeMenu()"
+            ><i class="fa fa-times fa-2x"></i
+          ></span>
+          <div class="menu-content">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">BLOG</a>
+            <a href="#">JOIN AS A PARTNER</a>
+            <a href="#">SERVICES</a>
+            <a href="#">APPLY FOR A LOAN</a>
+            <a href="#">GET INSURANCE</a>
+            <a href="#">BOOK A PROPERTY</a>
+            <a href="#">CALCULATORS</a>
+            <a href="#">DOWNLOAD CHECKLIST</a>
+            <a href="#">CONTACT US</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Jumbotron-->
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">
+        This is a simple hero unit, a simple jumbotron-style component for
+        calling extra attention to featured content or information.
+      </p>
+      <hr class="my-4" />
+      <p>
+        It uses utility classes for typography and spacing to space content out
+        within the larger container.
+      </p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+    <!--achivements-->
+    <section>
+      <div class="container">
+        <div class="row mb-5 text-center text-black p-4">
+          <div class="col-md-4 achievement-anime">
+            <span style="font-size: 70px; color: #00a8e8;"
+              ><i class="fa fa-clock-o"></i
+            ></span>
+            <h4 style="color: black;">Awards</h4>
+            <p>
+              Awarded as ‘Best Tech Trend Setter'. awarded as the “Best Tech
+              Trend Setter in the emerging 2020. This award has helped us to add
+              a booster and to act more prudently to upscale services more
+              digitally.
+            </p>
+          </div>
+          <div class="col-md-4 achievement-anime">
+            <span style="font-size: 70px; color: #00a8e8;"
+              ><i class="fa fa-weixin"></i
+            ></span>
+            <h4 style="color: black;">Partner Program</h4>
+            <p>
+              Lifetime Earning Opportunities created with multiple Financial
+              Services under one roof. 2000+ Partners enrolled till date and
+              earning a passive Income.
+            </p>
+          </div>
+          <div class="col-md-4 achievement-anime">
+            <span style="font-size: 70px; color: #00a8e8;"
+              ><i class="fa fa-user"></i
+            ></span>
+            <h4 style="color: black;">Customers</h4>
+            <p>
+              15000+ Happy & satisfied customers served across PAN India.
+            </p>
+          </div>
+          <div class="col-md-4 achievement-anime">
+            <span style="font-size: 70px; color: #00a8e8;"
+              ><i class="fa fa-clock-o"></i
+            ></span>
+            <h4 style="color: black;">Awards</h4>
+            <p>
+              Awarded as ‘Best Tech Trend Setter'. awarded as the “Best Tech
+              Trend Setter in the emerging 2020. This award has helped us to add
+              a booster and to act more prudently to upscale services more
+              digitally.
+            </p>
+          </div>
+          <div class="col-md-4 achievement-anime">
+            <span style="font-size: 70px; color: #00a8e8;"
+              ><i class="fa fa-weixin"></i
+            ></span>
+            <h4 style="color: black;">Partner Program</h4>
+            <p>
+              Lifetime Earning Opportunities created with multiple Financial
+              Services under one roof. 2000+ Partners enrolled till date and
+              earning a passive Income.
+            </p>
+          </div>
+          <div class="col-md-4 achievement-anime">
+            <span style="font-size: 70px; color: #00a8e8;"
+              ><i class="fa fa-user"></i
+            ></span>
+            <h4 style="color: black;">Customers</h4>
+            <p>
+              15000+ Happy & satisfied customers served across PAN India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Read the Story Behind-->
+    <div class="card" style="background-color: #e9e9e9;">
+      <div class="row">
+        <div class="col-md-6">
+          <div style="padding: 100px 0px 50px 0px; text-align: center;">
+            <h3>
+              Lorem ipsum dolor<br />
+              Lorem ipsum
+            </h3>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div
+            style="
+              padding: 100px 0px 50px 0px;
+              text-align: justify;
+              font-size: 18px;
+            "
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate asperiores blanditiis quibusdam placeat. Laboriosam in
+              porro nostrum corporis alias id expedita vel doloremque, ratione
+              eveniet nam quo sint labore hic!
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+              laborum exercitationem ratione tempora, obcaecati praesentium
+              dignissimos ducimus eligendi fuga veniam et facere, recusandae
+              repellat consectetur delectus iste commodi inventore sed?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<div style="padding: 100px;"></div>
+    <!--Cards-->
+    <div  class="container-fluid" >
+    <div class="card-deck">
+        <div class="card">
+          <img src="https://demo.goodlayers.com/financity/wp-content/uploads/2016/05/personnel-1-400x310.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://demo.goodlayers.com/financity/wp-content/uploads/2016/05/personnel-2-400x310.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://demo.goodlayers.com/financity/wp-content/uploads/2016/05/personnel-3-400x310.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div style="padding: 100px;"></div>
+<!--NEW SECTION-->
+<div class="container-fluid row">
+    <div class="col-md-5">
+        <img src=""
+    </div>
+</div>
+
+
+</body>
+</html>
