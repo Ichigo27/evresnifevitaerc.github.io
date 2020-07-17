@@ -1,0 +1,361 @@
+<html>
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/shards.min.css" />
+        <link rel="stylesheet" href="assets/css/animate.min.css" />
+        <link
+          rel="stylesheet"
+          href="assets/font-awesome/css/font-awesome.min.css"
+        />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    
+        <link rel="stylesheet" href="assets/css/home.css" />
+      </head>
+      <body>
+ <!-- navbar -->
+ <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img
+                height="30"
+                src="assets/images/cf-logo - Copy.png"
+                class="align-center img-responsive brand-logo1"
+                alt=""
+            />
+            <img
+                height="30"
+                src="assets/images/cf-logo.png"
+                class="align-center img-responsive brand-logo2"
+                alt=""
+            />
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link ml-2" href="#"
+                        ><strong>Home</strong></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-2" href="#"
+                        ><strong>About Us</strong></a
+                    >
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle ml-2"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        ><strong>Services</strong>
+                    </a>
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                    >
+                        <a class="dropdown-item" href="#"
+                            >Know your Eligibility</a
+                        >
+                        <a class="dropdown-item" href="#"
+                            >Free Consultation</a
+                        >
+                        <a class="dropdown-item" href="#"
+                            >Join as a Partner</a
+                        >
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-2" href="#"
+                        ><strong>Contact Us</strong></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ml-2" href="#"
+                        ><strong>Blog</strong></a
+                    >
+                </li>
+                <li class="nav-item dropdown d-block d-lg-none">
+                    <a
+                        class="nav-link dropdown-toggle ml-2"
+                        href="#"
+                        id="moreDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <strong>More</strong>
+                    </a>
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="moreDropdown"
+                        style="height: 200px; overflow-y: scroll;"
+                    >
+                        <a class="dropdown-item" href="#">HOME</a>
+                        <a class="dropdown-item" href="#">ABOUT US</a>
+                        <a class="dropdown-item" href="#">BLOG</a>
+                        <a class="dropdown-item" href="#"
+                            >JOIN AS A PARTNER</a
+                        >
+                        <a class="dropdown-item" href="#">SERVICES</a>
+                        <a class="dropdown-item" href="#"
+                            >APPLY FOR A LOAN</a
+                        >
+                        <a class="dropdown-item" href="#"
+                            >GET INSURANCE</a
+                        >
+                        <a class="dropdown-item" href="#"
+                            >BOOK A PROPERTY</a
+                        >
+                        <a class="dropdown-item" href="#"
+                            >CALCULATORS</a
+                        >
+                        <a class="dropdown-item" href="#"
+                            >DOWNLOAD CHECKLIST</a
+                        >
+                        <a class="dropdown-item" href="#">CONTACT US</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link btn btn-info text-white font-weight-bold ml-2"
+                        type="button"
+                    >
+                        Join As a Partner
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item mr-5">
+                    <a class="nav-link" href="tel:8828824242">
+                        <i
+                            class="fa fa-phone mr-2 row align-self-center"
+                            aria-hidden="true"
+                        ></i>
+                        <strong>8828824142</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-icon d-none d-lg-block">
+            <span class="menu-icon" id="menu-icon" onclick="openMenu()">
+                <i class="fa fa-align-justify fa-2x"></i>
+            </span>
+        </div>
+        <div class="menu-container" id="navbar">
+            <span
+                class="close-menu"
+                id="close-icon"
+                onclick="closeMenu()"
+                ><i class="fa fa-times fa-2x"></i
+            ></span>
+            <div class="menu-content">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">BLOG</a>
+                <a href="#">JOIN AS A PARTNER</a>
+                <a href="#">SERVICES</a>
+                <a href="#">APPLY FOR A LOAN</a>
+                <a href="#">GET INSURANCE</a>
+                <a href="#">BOOK A PROPERTY</a>
+                <a href="#">CALCULATORS</a>
+                <a href="#">DOWNLOAD CHECKLIST</a>
+                <a href="#">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+      <!--Jumbotron-->
+      <section>
+        <div class="jumbotron text-white" style="background-color: #00171f;">
+          <h1 class="display-4 " >Contact Us</h1>
+          <p class="lead" >
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+          </p>
+          <hr class="my-4" />
+          <p>
+            It uses utility classes for typography and spacing to space content out
+            within the larger container.
+          </p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+      </section>
+    
+        <!--Contact us-->
+        <section>
+            <div class=" contactContainer mb-5 pb-5">
+            <div class="card"> 
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-6 contactCol contactTextInfoCol"></div>
+                    <div class="col-sm-6 contactCol">
+                      <div class="contactFormContainer container">
+                        <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="firstName">First Name</label>
+                              <input type="text" class="form-control is-valid" id="firstName" placeholder="First Name"
+                                value="Vestie" required />
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="lastName">Last Name</label>
+                              <input type="text" class="form-control is-valid" id="lastName" placeholder="Last Name"
+                                value="Pora" required />
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputEmail">Email Address</label>
+                            <input type="email" class="form-control is-valid" id="inputEmail" placeholder="Email" required
+                              value="vastiepora@xyz.com" />
+                          </div>
+                          <div class="form-group">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="text" class="form-control is-invalid" id="phoneNumber" placeholder="Phone Number"
+                              required />
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">City</label>
+                              <input type="text" class="form-control is-invalid" id="inputCity" />
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputState">State</label>
+                              <select id="inputState" class="form-control is-invalid">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputZip">Zip</label>
+                              <input type="text" class="form-control is-invalid" id="inputZip" />
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck" />
+                              <label class="form-check-label" for="gridCheck">
+                                Check me out
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary myButton">
+                            Submit
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+            <!--footer-->
+  <section>
+    <footer style="background-color: #00171f;">
+      <div class="pt-5 container text-white footer-anime">
+        <div
+          class="pb-4 row justify-content-center text-center text-sm-left no-gutters"
+        >
+          <div class="mb-4 col-md-3">
+            <img
+              height="40"
+              src="assets/images/cf-logo - Copy.png"
+              class="align-center img-responsive brand-logo1 mb-4"
+              alt=""
+            />
+            <p>
+              suport@cfplindia.com <br />
+              Helpline No.:-8828824242 <br />
+              Whatsapp:-8828824141
+            </p>
+            <div
+              class="mt-4 row justify-content-center justify-content-sm-start"
+            >
+              <div class="col-2">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="mb-4 col-md-2">
+            <h5 class="mb-2">Company</h5>
+            <a href="">Home</a><br />
+            <a href="">About Us</a><br />
+            <a href="">Blog</a><br />
+            <a href="">Join as a Partner</a><br />
+            <a href="">Contact Us</a><br />
+            <a href="">Privacy Policy</a><br />
+            <a href="">Terms and Conditions</a><br />
+          </div>
+  
+          <div class="mb-4 col-md-2">
+            <h5 class="mb-2">Services</h5>
+            <a href="">Apply for a Loan</a><br />
+            <a href="">Get Insurance</a><br />
+            <a href="">Book a Property</a><br />
+            <a href="">Download Checklist</a><br />
+          </div>
+  
+          <div class="mb-4 col-md-2">
+            <h5 class="mb-2">Quick Eligibility</h5>
+            <a href="">Calculators</a><br />
+          </div>
+          <div class="mb-4 col-md-3">
+            <h5 class="mb-2">Download Now</h5>
+            <p>Join as a Partner for Android - Playstore</p>
+  
+            <p>Join as a Partner for IOS - Apple Store</p>
+          </div>
+        </div>
+        <div class="pb-5 mb-3 copyRightRow row">
+          <p>Copyright © 2020 All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="bottomFooter fixed-bottom p-1">
+      <p class="mb-0">
+        <i class="pr-2 fa fa-phone"></i>Instant Callback | Quick Inquiry
+        <i class="pl-2 fa fa-edit"></i>
+      </p>
+    </div>
+  </section>
+  
+
+
+      </body>
+</html>
